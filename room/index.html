@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- Primary Meta Tags -->
+    <title>お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
+    <meta name="title" content="お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】">
+    <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beigemouse90.sakura.ne.jp/ishii-kadan/room/">
+    <meta property="og:title" content="お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】">
+    <meta property="og:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+    <meta property="og:image" content="https://beigemouse90.sakura.ne.jp/ishii-kadan/img/oheya-header.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://beigemouse90.sakura.ne.jp/ishii-kadan/room/">
+    <meta property="twitter:title" content="お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】">
+    <meta property="twitter:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+    <meta property="twitter:image" content="https://beigemouse90.sakura.ne.jp/ishii-kadan/img/oheya-header.png">
+    <link rel="stylesheet" href="../css/ress.css" />
+    <link rel="stylesheet" href="../css/underpage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header" class="header header--under">
+      <div class="header-menu">
+        <h1 class="site-title">
+          <a href="../index.html">石井花壇</a>
+        </h1>
+        <div class="sp-menu-wrapper">
+          <div class="sp-menu" id="js-sp-menu" aria-hidden="true">
+            <ul class="header-menu-list">
+              <li class="header-menu-list__item">
+                <a href="../room/">お部屋</a>
+              </li>
+              <li class="header-menu-list__item">
+                <a href="../cuisine/">お料理</a>
+              </li>
+              <li class="header-menu-list__item">
+                <a href="../onsen/">温泉</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="check-btn">宿泊予約</button>
+      </div>
+      <div class="modal-area" id="modalArea">
+        <div class="modal-bg" id="modalBg">
+          <div id="modalWrapper" class="modal-wrapper">
+            <h2 class="modal-title">宿泊予約</h2>
+            <form class="modal-contents reserve">
+              <label class="reserve__name" for="name">お名前</label>
+              <input
+                class="reserve__input"
+                type="text"
+                name="name"
+                placeholder=" 例：石井正悟"
+              />
+              <label class="reserve__name" for="name">メールアドレス</label>
+              <input
+                class="reserve__input"
+                type="text"
+                name="address"
+                placeholder=" 例：Example@example.com"
+              />
+              <label class="reserve__name" for="name"
+                >ご希望プラン（空いているプランのみ表示されます）</label
+              >
+              <select
+                name="plan"
+                id="reservePlanSelect"
+                class="reserve-plan-select"
+                size="1"
+              >
+                <option value="morning">プランを選択してください</option>
+                <option value="morning">
+                  ①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+                </option>
+                <option value="crab">
+                  ②平日に優雅に楽しむ、特別宿泊プラン
+                </option>
+                <option value="kaiseki">
+                  ③絶景貸切露天と個室会席を満喫できるファミリープラン
+                </option>
+              </select>
+              <label class="reserve__name" for="name">日時選択</label>
+              <input
+                class="reserve__input flatpickr"
+                type="text"
+                name="date"
+                placeholder="日時を選択してください"
+              />
+              <input
+                class="reserve__submit-btn"
+                type="button"
+                value="送信する"
+                disabled
+              />
+            </form>
+            <button class="close-btn">
+              <span class="close-btn__bar--top"></span>
+              <span class="close-btn__bar--btm"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="burger-btn"
+        id="js-burger"
+        aria-controls="js-sp-menu"
+        aria-expanded="false"
+        aria-label="メニューの開閉を行う"
+      >
+        <span class="bar"></span>
+      </button>
+    </header>
+    <!-- /#header -->
+
+    <main class="room">
+      <section id="under-first-view">
+        <h2 class="under-first-view__title">お部屋</h2>
+      </section>
+      <!-- /#first-view -->
+      <section class="features">
+        <div class="features-wrapper">
+          <ul class="breadcrumb">
+            <li class="breadcrumb__item"><a href="../index.html">トップ</a></li>
+            <span class="pagenation">></span>
+            <li class="breadcrumb__item">お部屋</li>
+          </ul>
+          <p
+            class="features__introduction"
+            data-aos="fade"
+            data-aos-duration="1500"
+          >
+            創業より受け継がれてきた石井花壇の和の造り<br />
+            温海の雄大な絶景を堪能していただけるように設計された客室<br />
+            ゆるやかに流れ行く時間に身を委ねて
+          </p>
+          <div class="feature-box">
+            <div class="feature-box__image">
+              <img
+                src="../img/oheya01.jpg"
+                alt="温泉付き客室"
+                class="feature-box__img"
+              />
+            </div>
+            <div class="feature-box__body">
+              <h4
+                class="feature-box__title"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                温泉付き客室
+              </h4>
+              <p
+                class="feature-box__text"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                温海の源泉かけ流し露天風呂付き客室になります。<br />
+                あなただけの上質な安らぎのひとときを。
+              </p>
+              <p
+                class="feature-box__annotator"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                ＊部屋数に限りがございます。<br />
+                ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。
+              </p>
+            </div>
+          </div>
+          <div class="feature-box feature-box--reverse">
+            <div class="feature-box__image">
+              <img
+                src="../img/oheya02.jpg"
+                alt="庭園付き客室"
+                class="feature-box__img"
+              />
+            </div>
+            <div class="feature-box__body">
+              <h4
+                class="feature-box__title"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                庭園付き客室
+              </h4>
+              <p
+                class="feature-box__text"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                庭園付きの客室になります。<br />
+                お庭を見ながら、ほっとするひとときをお過ごしください。
+              </p>
+              <p
+                class="feature-box__annotator"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                ＊お庭は複数のお客様と囲む形になります。<br />
+                ＊部屋数に限りがあります。<br />
+                ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。
+              </p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-box__image">
+              <img
+                src="../img/oheya03.jpg"
+                alt="一般客室"
+                class="feature-box__img"
+              />
+            </div>
+            <div class="feature-box__body">
+              <h4
+                class="feature-box__title"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                一般客室
+              </h4>
+              <p
+                class="feature-box__text"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br />
+                内装となっており、とても過ごしやすくしていただけます。
+              </p>
+              <p
+                class="feature-box__annotator"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
+                ＊全室お部屋より日本海を望むことができます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.room-features -->
+    </main>
+    <footer id="footer">
+      <div class="footer-menu">
+        <ul class="footer-nav">
+          <li class="footer-nav__item"><a href="../room/">お 部 屋</a></li>
+          <li class="footer-nav__item"><a href="../cuisine/">お 料 理</a></li>
+          <li class="footer-nav__item"><a href="../onsen/">温 泉</a></li>
+        </ul>
+        <p class="footer-logo">石井花壇</p>
+        <div class="footer-address-box">
+          <span class="footer-post-number">〒000-0000</span>
+          <span class="footer-address">山形県鶴岡市xxxxxxxxxxx</span>
+        </div>
+        <div class="footer-phone-box">
+          <span class="footer-tel">TEL.000-0000-0000</span>
+          <span class="footer-fax">FAX.00-0000-0000</span>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <small class="copyright"
+          >Copyright &copy; 石井花壇 All Rights Reserved.</small
+        >
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+    <script src="../js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script>
+      type =
+        "application/ld+json" >
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "listItem",
+              position: 1,
+              name: "HOME",
+              item: "http://beigemouse90.sakura.ne.jp",
+            },
+            {
+              "@type": "listItem",
+              position: 2,
+              name: "ROOM",
+              item: "http://beigemouse90.sakura.ne.jp/room/",
+            }
+          ]
+        };
+    </script>
+  </body>
+</html>
