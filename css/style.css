@@ -217,7 +217,6 @@ a:link, a:visited, a:hover, a:active {
   font-weight: bold;
   line-height: 1.4;
   padding-left: 32px;
-  vertical-align: middle;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -244,7 +243,7 @@ a:link, a:visited, a:hover, a:active {
 }
 @media screen and (max-width: 768px) {
   .check-btn::before {
-    left: clamp(10%,32px,22%);
+    left: max(15px,23%);
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     max-width: 18px;
@@ -1324,10 +1323,10 @@ a:link, a:visited, a:hover, a:active {
 .footer-copy {
   background-color: #000;
   text-align: center;
+  padding: 18px 0;
 }
 .footer-copy .copyright {
   font-size: 1.2rem;
   color: #fff;
-  line-height: 60px;
 }
 /*# sourceMappingURL=style.css.map */

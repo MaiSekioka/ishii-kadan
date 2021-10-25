@@ -211,7 +211,6 @@ $breakpoints: (
   font-weight: bold;
   line-height: 1.4;
   padding-left: 32px;
-  vertical-align: middle;
   transition: .3s;
 
   @include mq(sm){
@@ -235,7 +234,7 @@ $breakpoints: (
     background-position: center;
 
     @include mq(sm){
-      left: clamp(10%,32px,22%);
+      left: unquote('max(15px,23%)');
       transform: translateX(-50%);
       max-width: 18px;
       max-height: 18px;
@@ -1251,10 +1250,10 @@ $breakpoints: (
 .footer-copy {
   background-color: #000;
   text-align: center;
+  padding: 18px 0;
 
   .copyright {
     font-size: 1.2rem;
     color: #fff;
-    line-height: 60px;
   }
 }
