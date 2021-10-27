@@ -79,6 +79,26 @@ a:link, a:visited, a:hover, a:active {
           transform-origin: left top;
 }
 
+.expand-link--relative {
+  position: relative;
+}
+.expand-link--relative:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.expand-link--absolute::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: auto;
+  z-index: 1;
+  content: "";
+}
+
 /*             */
 /* header      */
 /*             */
@@ -1083,11 +1103,6 @@ a:link, a:visited, a:hover, a:active {
           align-items: flex-start;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-.news-content__item:hover {
-  opacity: 0.7;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .news-content__item:nth-last-child(2), .news-content__item:last-child {
   margin-bottom: 0;

@@ -92,6 +92,26 @@ $breakpoints: (
   transform-origin: left top;
 }
 
+.expand-link--relative {
+  position: relative;
+  
+  &:hover {
+    opacity: .7;
+    transition: .3s;
+  }
+}
+
+.expand-link--absolute::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: auto;
+  z-index: 1;
+  content: '';
+}
+
 /*             */
 /* header      */
 /*             */
@@ -1013,11 +1033,6 @@ $breakpoints: (
     display: flex;
     align-items: flex-start;
     transition: .2s;
-
-    &:hover {
-      opacity: .7;
-      transition: .3s;
-    }
 
     &:nth-last-child(2),
     &:last-child {
