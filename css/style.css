@@ -862,6 +862,12 @@ a:link, a:visited, a:hover, a:active {
     padding-top: 16px;
   }
 }
+@media screen and (max-width: 768px) {
+  .media-body {
+    padding-top: 24px;
+    padding-left: 18px;
+  }
+}
 .media-body__title {
   font-size: 3.6rem;
   line-height: 1.72;

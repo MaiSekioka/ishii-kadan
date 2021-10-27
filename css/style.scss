@@ -806,6 +806,11 @@ $breakpoints: (
     padding-top: 16px;
   }
 
+  @include mq(sm) {
+    padding-top: 24px;
+    padding-left: 18px;
+  }
+  
   &__title {
     font-size: 3.6rem;
     line-height: 1.72;
