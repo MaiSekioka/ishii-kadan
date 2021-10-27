@@ -169,7 +169,7 @@
     margin-left: calc(100% - 238px);
 
     @include s.mq(){
-      min-width: 75%;
+      width: max(580px,75%);
       padding-top: 80px;
       padding-left: 100px;
       padding-right: 40px;
@@ -210,9 +210,6 @@
 }
 
 .feature-box--reverse {
-  @include s.mq(){
-    min-height: 650px;
-  }
 
   @include s.mq(sm){
     min-height: 740px;
@@ -235,7 +232,8 @@
       margin-right: calc(100% - 238px);
 
       @include s.mq(){
-        padding-right: 100px;
+        padding-right: 60px;
+        height: min(410px, 50%);
       }
 
       @include s.mq(sm){
@@ -246,10 +244,8 @@
 }
 
 .cuisine .feature-box {
-
   @include s.mq(){
     height: auto;
-    min-height: 670px;
   }
 
   &__body{
