@@ -392,7 +392,24 @@ a:link, a:visited, a:hover, a:active {
   border: 1px solid #E7E7E7;
   margin-bottom: 14px;
   padding: 0 10px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+}
+.reserve__input::-webkit-input-placeholder, .reserve-plan-select::-webkit-input-placeholder {
+  -webkit-transform: scale(87.5%) translateX(-36px);
+          transform: scale(87.5%) translateX(-36px);
+}
+.reserve__input::-moz-placeholder, .reserve-plan-select::-moz-placeholder {
+  transform: scale(87.5%) translateX(-36px);
+}
+.reserve__input:-ms-input-placeholder, .reserve-plan-select:-ms-input-placeholder {
+  transform: scale(87.5%) translateX(-36px);
+}
+.reserve__input::-ms-input-placeholder, .reserve-plan-select::-ms-input-placeholder {
+  transform: scale(87.5%) translateX(-36px);
+}
+.reserve__input::placeholder, .reserve-plan-select::placeholder {
+  -webkit-transform: scale(87.5%) translateX(-36px);
+          transform: scale(87.5%) translateX(-36px);
 }
 .reserve__submit-btn {
   display: inline-block;

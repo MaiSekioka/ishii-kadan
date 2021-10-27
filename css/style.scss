@@ -94,7 +94,7 @@ $breakpoints: (
 
 .expand-link--relative {
   position: relative;
-  
+
   &:hover {
     opacity: .7;
     transition: .3s;
@@ -376,7 +376,11 @@ $breakpoints: (
     border: 1px solid #E7E7E7;
     margin-bottom: 14px;
     padding: 0 10px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+
+    &::placeholder {
+      transform: scale(87.5%) translateX(-36px);
+    }
   }
 
   &__submit-btn {
