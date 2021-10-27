@@ -739,7 +739,7 @@ $breakpoints: (
     line-height: 2.3;
 
     @include mq(sm){
-      margin-top: 20px;
+      margin-top: 0;
       margin-left: 0;
     }
   }

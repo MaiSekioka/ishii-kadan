@@ -791,7 +791,7 @@ a:link, a:visited, a:hover, a:active {
 }
 @media screen and (max-width: 768px) {
   .intro-text p {
-    margin-top: 20px;
+    margin-top: 0;
     margin-left: 0;
   }
 }
