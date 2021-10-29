@@ -276,10 +276,6 @@ a:link, a:visited, a:hover, a:active {
   transition: 0.4s;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
 #header.fixed {
   position: fixed;
 }
