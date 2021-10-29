@@ -437,7 +437,7 @@ $breakpoints: (
     display: inline-block;
     content: '';
     width: 28px;
-    height: 2px;
+    height: 1px;
     background-color: #fff;
     left: 50%;
     transform: translateX(-50%);
@@ -448,7 +448,7 @@ $breakpoints: (
       display: inline-block;
       content: '';
       width: 28px;
-      height: 2px;
+      height: 1px;
       background-color: #fff;
       top: 8px;
       left: 50%;
@@ -460,7 +460,7 @@ $breakpoints: (
       display: inline-block;
       content: '';
       width: 28px;
-      height: 2px;
+      height: 1px;
       background-color: #fff;
       top: -8px;
       left: 50%;
@@ -473,21 +473,16 @@ $breakpoints: (
 .burger-btn[aria-expanded="true"]{
 
   .bar{
-    background-color: transparent !important;
-
+    
     &::before{
       top: 0;
-      left: 0;
-      transform: rotate(45deg);
       background-color: #fff !important;
-      transition: .3s ease;
+      transition: .3s linear;
     }
     &::after{
       top: 0;
-      left: 0;
-      transform: rotate(-45deg);
       background-color: #fff !important;
-      transition: .3s ease;
+      transition: .3s linear;
     }
   }
 }

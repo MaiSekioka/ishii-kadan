@@ -463,7 +463,7 @@ a:link, a:visited, a:hover, a:active {
   display: inline-block;
   content: "";
   width: 28px;
-  height: 2px;
+  height: 1px;
   background-color: #fff;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -474,7 +474,7 @@ a:link, a:visited, a:hover, a:active {
   display: inline-block;
   content: "";
   width: 28px;
-  height: 2px;
+  height: 1px;
   background-color: #fff;
   top: 8px;
   left: 50%;
@@ -488,7 +488,7 @@ a:link, a:visited, a:hover, a:active {
   display: inline-block;
   content: "";
   width: 28px;
-  height: 2px;
+  height: 1px;
   background-color: #fff;
   top: -8px;
   left: 50%;
@@ -498,26 +498,17 @@ a:link, a:visited, a:hover, a:active {
   transition: 0.2s ease;
 }
 
-.burger-btn[aria-expanded=true] .bar {
-  background-color: transparent !important;
-}
 .burger-btn[aria-expanded=true] .bar::before {
   top: 0;
-  left: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
   background-color: #fff !important;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 .burger-btn[aria-expanded=true] .bar::after {
   top: 0;
-  left: 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
   background-color: #fff !important;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .is-active .sp-menu-wrapper {
